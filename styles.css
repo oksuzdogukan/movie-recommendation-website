@@ -1,4 +1,4 @@
-/* Genel Stiller */
+/* General Styles */
 * {
     margin: 0;
     padding: 0;
@@ -76,7 +76,7 @@ nav ul li a.active {
     }
 }
 
-/* Hero Bölümü */
+/* Hero Section */
 .hero {
     height: 100vh;
     display: flex;
