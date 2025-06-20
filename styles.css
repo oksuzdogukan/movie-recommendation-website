@@ -1,4 +1,4 @@
-/* Genel Stiller */
+/* General Styles */
 * {
     margin: 0;
     padding: 0;
@@ -115,7 +115,7 @@ header {
     
 }
 
-/* Hero Bölümü */
+/* Hero Section */
 .hero {
     height: 100vh;
     display: flex;
