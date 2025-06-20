@@ -4,74 +4,118 @@
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>Movie Mind - Explore Movies</title>
+    <!-- Sekmede görünecek sayfa başlığı -->
+
     <link rel="stylesheet" href="styles.css">
+    <!-- Harici CSS dosyasını projeye dahil ediyor -->
+
     <link rel="icon" type="image/png" sizes="16x16"  href="images/favicon-16x16.png">
+    <!-- Sekmedeki küçük ikon (favicon) -->
+
     <link href="https://fonts.googleapis.com/css2?family=Poppins:wght@400;600;700&display=swap" rel="stylesheet">
+    <!-- Google Fonts üzerinden Poppins fontunu yüklüyor -->
 </head>
 <body>
-    <header>
+     <header>
+        <!-- Üst kısım, logo ve menü barı -->
+
         <div class="logo">
+            <!-- Logonun iki parçaya bölünmüş hali -->
             <span class="logo-part-1">Movie</span>
             <span class="logo-part-2">Mind</span>
         </div>
+
         <nav>
-            <ul>
-                <li><a href="home.html">Home</a></li>
-                <li><a href="explore.html" class="active">Explore</a></li>
-                <li><a href="watchList.html">Watch List</a></li>
+            <!-- Navigasyon menüsü -->
+            <ul class="nav-menu">
+                <li class="nav-item"><a href="home.html" class="nav-link">Home</a></li>
+                <li class="nav-item"><a href="explore.html" class="active nav-link">Explore</a></li>
+                <!-- Bu sayfa aktif olduğu için class="active" -->
+                <li class="nav-item"><a href="watchList.html" class="nav-link">Watch List</a></li>
             </ul>
+            <div class="hamburger">
+                <span class="bar"></span>
+                <span class="bar"></span>
+                <span class="bar"></span>
+            </div>
         </nav>
     </header>
 
     <main class="explore-page">
+        <!-- Ana içerik alanı, explore sayfası -->
+
         <section class="genre-selection">
+            <!-- Film türlerini seçme bölümü -->
+
             <h2>Choose Your Favorite Movie Genres</h2>
+            <!-- Kullanıcıya ne yapması gerektiğini söylüyor -->
+
             <div class="genre-grid">
+                <!-- Grid şeklinde buton yerleşimi -->
+
+                <!-- Her buton bir film türünü temsil ediyor ve TMDb tarzı bir data-id içeriyor -->
                 <button class="genre-btn" data-id="28">Action</button>
                 <button class="genre-btn" data-id="12">Adventure</button>
                 <button class="genre-btn" data-id="16">Animation</button>
                 <button class="genre-btn" data-id="35">Comedy</button>
                 <button class="genre-btn" data-id="80">Crime</button>
-                
+
                 <button class="genre-btn" data-id="99">Documentary</button>
                 <button class="genre-btn" data-id="18">Drama</button>
                 <button class="genre-btn" data-id="10751">Family</button>
                 <button class="genre-btn" data-id="14">Fantasy</button>
                 <button class="genre-btn" data-id="36">History</button>
-                
+
                 <button class="genre-btn" data-id="27">Horror</button>
                 <button class="genre-btn" data-id="10402">Music</button>
                 <button class="genre-btn" data-id="9648">Mystery</button>
                 <button class="genre-btn" data-id="10749">Romance</button>
                 <button class="genre-btn" data-id="878">Sci-Fi</button>
-                
+
                 <button class="genre-btn" data-id="10770">TV Movie</button>
                 <button class="genre-btn" data-id="53">Thriller</button>
                 <button class="genre-btn" data-id="10752">War</button>
                 <button class="genre-btn" data-id="37">Western</button>
             </div>
-            
+
             <div class="navigation">
+                <!-- Tür seçimini yaptıktan sonra yönlendirme -->
                 <a href="explore-2.html" class="next-btn">Show Recommendations</a>
+                <!-- Seçilen türlere göre önerilen filmleri gösterecek sayfaya geçiş -->
             </div>
         </section>
     </main>
 
     <footer>
+        <!-- Sayfa sonu, klasik telif hakkı ve sosyal medya ikonları -->
+
         <div class="footer-content">
             <p>&copy; 2025 MovieMind. All rights reserved.</p>
+
             <div class="social-icons">
-                <a href="https://www.linkedin.com/in/ali-duman-062952293/" target="_blank" title="Ali's Linkedin"><img src ="images/LinkedIn_logo_initials.png"></a>
+                <!-- LinkedIn linkleri - Takım arkadaşlarının profilleri -->
+                <a href="https://www.linkedin.com/in/ali-duman-062952293/" target="_blank" title="Ali's Linkedin">
+                    <img src="images/LinkedIn_logo_initials.png">
+                </a>
 
-                <a href="https://www.linkedin.com/in/do%C4%9Fukan-%C3%B6ks%C3%BCz-144377237/" target="_blank" title="Dogukan's Linkedin"><img src="images/LinkedIn_logo_initials.png" ></a>
+                <a href="https://www.linkedin.com/in/do%C4%9Fukan-%C3%B6ks%C3%BCz-144377237/" target="_blank" title="Dogukan's Linkedin">
+                    <img src="images/LinkedIn_logo_initials.png">
+                </a>
 
-                <a href="" target="_blank" title="Melih's Linkedin"><img src="images/LinkedIn_logo_initials.png" ></a>
+                <a href="" target="_blank" title="Melih's Linkedin">
+                    <img src="images/LinkedIn_logo_initials.png">
+                </a>
 
-                <a href="https://www.linkedin.com/in/tunahan-aydin-388628365/" target="_blank" title="Tunahan's Linkedin"><img src="images/LinkedIn_logo_initials.png" ></a>
+                <a href="https://www.linkedin.com/in/tunahan-aydin-388628365/" target="_blank" title="Tunahan's Linkedin">
+                    <img src="images/LinkedIn_logo_initials.png">
+                </a>
             </div>
         </div>
     </footer>
 
-<script src="js/explore.js"></script>
+    <script src="js/explore.js"></script>
+    <script src="js/main.js"></script>
+
+    <!-- Butonlara tıklama gibi işlemleri yöneten JS dosyası -->
 </body>
 </html>

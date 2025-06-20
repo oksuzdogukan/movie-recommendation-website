@@ -3,31 +3,56 @@
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>Movie Mind</title>
+    <title>Movie Mind - Explore Movies</title>
+    <!-- Sekmede görünecek sayfa başlığı -->
+
     <link rel="stylesheet" href="styles.css">
+    <!-- Harici CSS dosyasını projeye dahil ediyor -->
+
+    <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/toastify-js/src/toastify.min.css">
+    <script src="https://cdn.jsdelivr.net/npm/toastify-js"></script>
+    <!-- Alert mesajlari icin Toastr'nin Css dosyasini kullaniyor -->
+    <!-- Alert mesajlari icin Toastr'nin Js dosyasini kullaniyor -->
+
     <link rel="icon" type="image/png" sizes="16x16"  href="images/favicon-16x16.png">
+    <!-- Sekmedeki küçük ikon (favicon) -->
+
     <link href="https://fonts.googleapis.com/css2?family=Poppins:wght@400;600;700&display=swap" rel="stylesheet">
+    <!-- Google Fonts üzerinden Poppins fontunu yüklüyor -->
 </head>
 <body>
+    <!-- Sayfanın üst kısmı - header -->
     <header>
         <div class="logo">
+            <!-- Logonun iki parçası: Movie + Mind -->
             <span class="logo-part-1">Movie</span>
             <span class="logo-part-2">Mind</span>
         </div>
+
+        <!-- Navigasyon menüsü -->
         <nav>
-            <ul>
-                <li><a href="home.html">Home</a></li>
-                <li><a href="explore.html">Explore</a></li>
-                <li><a href="watchList.html" class="active">Watch List</a></li>
+            <ul class="nav-menu">
+                <li class="nav-item"><a href="home.html" class="nav-link">Home</a></li>
+                <li class="nav-item"><a href="explore.html" class="nav-link">Explore</a></li>
+                <li class="nav-item"><a href="watchList.html" class="active nav-link">Watch List</a></li>
             </ul>
+            <div class="hamburger">
+                <span class="bar"></span>
+                <span class="bar"></span>
+                <span class="bar"></span>
+            </div>
         </nav>
     </header>
 
+    <!-- Ana içerik bölümü -->
     <main class="films-page">
         <div class="films-container">
-            
 
-            <!-- <div class="film-card">
+            <!-- Film kartları dinamik olarak buraya eklenecek (JS ile) -->
+
+            <!-- Örnek film kartı yapısı -->
+            <!-- 
+            <div class="film-card">
                 <h3>Interstellar</h3>
                 <ul class="film-details">
                     <img src="images/interstellar.png" alt="#">
@@ -37,30 +62,49 @@
                     <li>Imdb: 3.1</li>
                 </ul>
                 <button class="btn">Remove Watch List</button>
-            </div> -->
+            </div> 
+            -->
 
-            <!-- <div class="movie-not-found">
+            <!-- İzleme listesinde film yoksa gösterilecek mesaj -->
+            <!-- 
+            <div class="movie-not-found">
                 <h1>Watch List Movies Not Found</h1>
-            </div> -->
+            </div> 
+            -->
+
         </div>
     </main>
 
+    <!-- Sayfa sonu - footer -->
     <footer>
         <div class="footer-content">
+            <!-- Telif hakkı yazısı -->
             <p>&copy; 2025 MovieMind. All rights reserved.</p>
+
+            <!-- LinkedIn profilleri -->
             <div class="social-icons">
-                <a href="https://www.linkedin.com/in/ali-duman-062952293/" target="_blank" title="Ali's Linkedin"><img src ="images/LinkedIn_logo_initials.png"></a>
+                <a href="https://www.linkedin.com/in/ali-duman-062952293/" target="_blank" title="Ali's Linkedin">
+                    <img src ="images/LinkedIn_logo_initials.png">
+                </a>
 
-                <a href="https://www.linkedin.com/in/do%C4%9Fukan-%C3%B6ks%C3%BCz-144377237/" target="_blank" title="Dogukan's Linkedin"><img src="images/LinkedIn_logo_initials.png" ></a>
+                <a href="https://www.linkedin.com/in/do%C4%9Fukan-%C3%B6ks%C3%BCz-144377237/" target="_blank" title="Dogukan's Linkedin">
+                    <img src="images/LinkedIn_logo_initials.png">
+                </a>
 
-                <a href="" target="_blank" title="Melih's Linkedin"><img src="images/LinkedIn_logo_initials.png" ></a>
+                <a href="" target="_blank" title="Melih's Linkedin">
+                    <img src="images/LinkedIn_logo_initials.png">
+                </a>
 
-                <a href="https://www.linkedin.com/in/tunahan-aydin-388628365/" target="_blank" title="Tunahan's Linkedin"><img src="images/LinkedIn_logo_initials.png" ></a>
+                <a href="https://www.linkedin.com/in/tunahan-aydin-388628365/" target="_blank" title="Tunahan's Linkedin">
+                    <img src="images/LinkedIn_logo_initials.png">
+                </a>
             </div>
         </div>
     </footer>
-    
 
+    <!-- Watch list verilerini yöneten JS dosyası -->
     <script src="js/watchList.js"></script>
+    <script src="js/main.js"></script>
+
 </body>
 </html>

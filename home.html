@@ -4,50 +4,96 @@
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>Movie Mind - Explore Movies</title>
+    <!-- Sekmede görünecek sayfa başlığı -->
+
     <link rel="stylesheet" href="styles.css">
+    <!-- Harici CSS dosyasını projeye dahil ediyor -->
+
     <link rel="icon" type="image/png" sizes="16x16"  href="images/favicon-16x16.png">
+    <!-- Sekmedeki küçük ikon (favicon) -->
+
     <link href="https://fonts.googleapis.com/css2?family=Poppins:wght@400;600;700&display=swap" rel="stylesheet">
+    <!-- Google Fonts üzerinden Poppins fontunu yüklüyor -->
 </head>
 <body>
     <header>
+        <!-- Sayfanın üst kısmı (navigasyon alanı) -->
+
         <div class="logo">
+            <!-- Logo kısmı -->
             <span class="logo-part-1">Movie</span>
             <span class="logo-part-2">Mind</span>
         </div>
+
         <nav>
-            <ul>
-                <li><a href="#" class="active">Home</a></li>
-                <li><a href="explore.html">Explore</a></li>
-                <li><a href="watchList.html">Watch List</a></li>
+            <!-- Navigasyon menüsü -->
+            <ul class="nav-menu">
+                <li class="nav-item"><a href="#" class="active nav-link">Home</a></li>
+                <!-- Ana sayfa linki (aktif olarak işaretlenmiş) -->
+
+                <li class="nav-item"><a href="explore.html" class="nav-link">Explore</a></li>
+                <!-- Film keşfetme sayfasına yönlendirir -->
+
+                <li class="nav-item"><a href="watchList.html" class="nav-link">Watch List</a></li>
+                <!-- İzleme listesi sayfasına yönlendirir -->
             </ul>
+            <div class="hamburger">
+                <span class="bar"></span>
+                <span class="bar"></span>
+                <span class="bar"></span>
+            </div>
         </nav>
     </header>
 
     <main>
+        <!-- Ana içerik alanı -->
+
         <section class="hero">
+            <!-- Giriş bölümünün yer aldığı alan -->
+
             <h1>LET'S EXPLORE MOVIES!</h1>
+            <!-- Başlık mesajı, kullanıcıyı keşfetmeye çağırıyor -->
+
             <div class="buttons">
+                <!-- Butonlar alanı -->
                 <a href="explore.html" class="btn explore-btn">Explore Movies</a>
+                <!-- Keşfetme sayfasına buton -->
+
                 <a href="watchList.html" class="btn watchlist-btn">Watch List</a>
+                <!-- İzleme listesi sayfasına buton -->
             </div>
         </section>
     </main>
 
     <footer>
+        <!-- Sayfanın en alt kısmı -->
+
         <div class="footer-content">
             <p>&copy; 2025 MovieMind. All rights reserved.</p>
+            <!-- Telif hakkı bilgisi -->
+
             <div class="social-icons">
-                <a href="https://www.linkedin.com/in/ali-duman-062952293/" target="_blank" title="Ali's Linkedin"><img src ="images/LinkedIn_logo_initials.png"></a>
+                <!-- LinkedIn ikonları ile takım üyelerinin profillerine linkler -->
+                <a href="https://www.linkedin.com/in/ali-duman-062952293/" target="_blank" title="Ali's Linkedin">
+                    <img src="images/LinkedIn_logo_initials.png">
+                </a>
 
-                <a href="https://www.linkedin.com/in/do%C4%9Fukan-%C3%B6ks%C3%BCz-144377237/" target="_blank" title="Dogukan's Linkedin"><img src="images/LinkedIn_logo_initials.png" ></a>
+                <a href="https://www.linkedin.com/in/do%C4%9Fukan-%C3%B6ks%C3%BCz-144377237/" target="_blank" title="Dogukan's Linkedin">
+                    <img src="images/LinkedIn_logo_initials.png">
+                </a>
 
-                <a href="" target="_blank" title="Melih's Linkedin"><img src="images/LinkedIn_logo_initials.png" ></a>
+                <a href="https://www.linkedin.com/in/melihcan-tokdemir-6a8905330/" target="_blank" title="Melih's Linkedin">
+                    <img src="images/LinkedIn_logo_initials.png">
+                </a>
 
-                <a href="https://www.linkedin.com/in/tunahan-aydin-388628365/" target="_blank" title="Tunahan's Linkedin"><img src="images/LinkedIn_logo_initials.png" ></a>
+                <a href="https://www.linkedin.com/in/tunahan-aydin-388628365/" target="_blank" title="Tunahan's Linkedin">
+                    <img src="images/LinkedIn_logo_initials.png">
+                </a>
             </div>
         </div>
     </footer>
 
+    <script src="js/main.js"></script>
 
 </body>
 </html>

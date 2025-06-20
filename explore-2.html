@@ -3,32 +3,56 @@
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>Movie Mind</title>
+   <title>Movie Mind - Explore Movies</title>
+    <!-- Sekmede görünecek sayfa başlığı -->
+
     <link rel="stylesheet" href="styles.css">
+    <!-- Harici CSS dosyasını projeye dahil ediyor -->
+
+    <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/toastify-js/src/toastify.min.css">
+    <script src="https://cdn.jsdelivr.net/npm/toastify-js"></script>
+    <!-- Alert mesajlari icin Toastr'nin Css dosyasini kullaniyor -->
+    <!-- Alert mesajlari icin Toastr'nin Js dosyasini kullaniyor -->
+
     <link rel="icon" type="image/png" sizes="16x16"  href="images/favicon-16x16.png">
+    <!-- Sekmedeki küçük ikon (favicon) -->
+
     <link href="https://fonts.googleapis.com/css2?family=Poppins:wght@400;600;700&display=swap" rel="stylesheet">
+    <!-- Google Fonts üzerinden Poppins fontunu yüklüyor -->
 </head>
+
 <body>
+    <!-- Üst menü (header) -->
     <header>
         <div class="logo">
+            <!-- Logo yazısı iki parçalı olarak tasarlanmış -->
             <span class="logo-part-1">Movie</span>
             <span class="logo-part-2">Mind</span>
         </div>
+
+        <!-- Navigasyon menüsü -->
         <nav>
-            <ul>
-                <li><a href="home.html">Home</a></li>
-                <li><a href="explore.html" class="active">Explore</a></li>
-                <li><a href="watchList.html">Watch List</a></li>
+            <ul class="nav-menu">
+                <li class="nav-item"><a href="home.html" class="nav-link">Home</a></li>
+                <li class="nav-item"><a href="explore.html" class="active nav-link">Explore</a></li>
+                <li class="nav-item"><a href="watchList.html" class="nav-link">Watch List</a></li>
             </ul>
+            <div class="hamburger">
+                <span class="bar"></span>
+                <span class="bar"></span>
+                <span class="bar"></span>
+            </div>
         </nav>
     </header>
 
+    <!-- Ana içerik kısmı -->
     <main class="films-page">
         <div class="films-container">
+            <!-- Buraya JavaScript ile dinamik olarak film kartları eklenecek -->
 
-
-            
-            <!-- <div class="film-card">
+            <!-- Örnek film kartı -->
+            <!-- 
+            <div class="film-card">
                 <h3>Interstellar</h3>
                 <ul class="film-details">
                     <img src="images/interstellar.png" alt="#">
@@ -37,17 +61,25 @@
                     <li>Imdb: 3.1</li>
                 </ul>
                 <button class="btn">Add Watch List</button>
-            </div> -->
+            </div> 
+            -->
 
-            <!-- <div class="movies-not-found">
+            <!-- Film bulunamazsa gösterilecek mesaj -->
+            <!-- 
+            <div class="movies-not-found">
                 <h1>Watch List Movies Not Found</h1>
-            </div> -->
+            </div>
+            -->
         </div>
     </main>
 
+    <!-- Alt bilgi (footer) -->
     <footer>
         <div class="footer-content">
+            <!-- Telif hakkı yazısı -->
             <p>&copy; 2025 MovieMind. All rights reserved.</p>
+
+            <!-- LinkedIn ikonları (ekip üyeleri) -->
             <div class="social-icons">
                 <a href="https://www.linkedin.com/in/ali-duman-062952293/" target="_blank" title="Ali's Linkedin"><img src ="images/LinkedIn_logo_initials.png"></a>
 
@@ -60,6 +92,8 @@
         </div>
     </footer>
 
-<script src="js/explore-2.js"></script>
+    <!-- JavaScript dosyası bağlantısı (film verilerini çekmek için) -->
+    <script src="js/explore-2.js"></script>
+    <script src="js/main.js"></script>
 </body>
 </html>
