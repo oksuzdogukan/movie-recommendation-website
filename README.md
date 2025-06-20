@@ -32,7 +32,9 @@ MovieMind/
 ├── watchList.html  
 │  
 ├── styles.css  
-│  
+│
+├── Academic_Project_Report_MovieMind.pdf 
+│
 ├── js/  
 │   ├── main.js  
 │   ├── explore.js  
