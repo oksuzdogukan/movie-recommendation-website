@@ -32,9 +32,7 @@ MovieMind/
 ├── watchList.html  
 │  
 ├── styles.css  
-│
-├── Academic_Project_Report_MovieMind.pdf 
-│
+│  
 ├── js/  
 │   ├── main.js  
 │   ├── explore.js  
@@ -48,7 +46,8 @@ MovieMind/
 │   ├── imagesthe_netflix_login_background_canada2024__by_logofeveryt_dh0w8qv-fullview.jpg  
 │   └── LinkedIn_logo_initials.png  
 │  
-└── README.md  
+├── README.md  
+└── Academic_Project_Report_MovieMind.pdf  
 ```  
 
 ---  
