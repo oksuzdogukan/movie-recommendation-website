@@ -1,5 +1,6 @@
 # 🎬 MovieMind – Interactive Movie Recommendation System  
 
+
 MovieMind is a dynamic and interactive web application that allows users to receive movie recommendations based on their preferred genres via TheMovieDB API. Users can discover movies according to their favorite genres, create watchlists, and save them in their browser.  
 
 ## 🔗 Live Demo  
