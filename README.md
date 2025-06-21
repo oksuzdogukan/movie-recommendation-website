@@ -5,7 +5,7 @@ MovieMind is a dynamic and interactive web application that allows users to rece
 
 ## 🔗 Live Demo  
 
-[➡️ Live on GitHub Pages / Netlify / Vercel](https://movierecommendationwebsite.netlify.app/)  
+[➡️ Live on Netlify](https://movierecommendationwebsite.netlify.app/)  
 
 ---  
 
