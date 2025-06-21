@@ -213,7 +213,7 @@ footer {
 
 /* Explore Page Specific Styles */
 .explore-page {
-    height: 100vh;
+    min-height: 100vh;
     margin: 0px auto;
     padding: 0 16px;
 }
